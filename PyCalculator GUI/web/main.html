@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <title>PyCalculator</title>
+
+        <script type="text/javascript" src="/eel.js"></script>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="screen">
+                <input type="text" id="display" disabled="true"/>
+            </div>
+            
+            <div class="buttons">
+                <div class="row">
+                    <a id="7" onclick="display()">7</a>
+                    <a id="8" onclick="display()">8</a>
+                    <a id="9" onclick="display()">9</a>
+                    <a id="+" onclick="display()">+</a>
+                </div>
+                <div class="row">
+                    <a id="4" onclick="display()">4</a>
+                    <a id="5" onclick="display()">5</a>
+                    <a id="6" onclick="display()">6</a>
+                    <a id="-" onclick="display()">-</a>
+                </div>
+                <div class="row">
+                    <a id="1" onclick="display()">1</a>
+                    <a id="2" onclick="display()">2</a>
+                    <a id="3" onclick="display()">3</a>
+                    <a id="*" onclick="display()">x</a>
+                </div>
+                <div class="row">
+                    <a id="c" onclick="display()">c</a>
+                    <a id="0" onclick="display()">0</a>
+                    <a id="=" onclick="get()">=</a>
+                    <a id="/" onclick="display()">/</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imports custom JavaScript file. -->
+        <script type="text/javascript" src="js/eel.js"></script>
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
