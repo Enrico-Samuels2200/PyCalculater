@@ -65,9 +65,14 @@ def calculate(val, operator):
     del numbers[0]
     return new_val
 
-# Starts the app.
-eel.start("main.html", size=(768, 713), block=False)
+def main():
+  # Starts the app.
+  eel.start("main.html", size=(768, 713), block=False)
 
-# Keeps the app running.
-while True:
-  eel.sleep(10)
+  # Keeps the app running.
+  while True:
+    eel.sleep(10)
+
+#   This prevents the script from automatically running when it is imported in to another python script or program.
+if __name__ == "__main__":
+  main()
